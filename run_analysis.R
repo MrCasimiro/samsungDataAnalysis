@@ -1,7 +1,10 @@
 run_analysis <- function(path) {
+    #install.packages("plyr")
+    library(plyr)
     
     test_dir <- paste(path, "test/",sep="")
     train_dir <- paste(path, "train/",sep="")
+    
     features <- read.table(paste(path,"features.txt",sep=""))
     var_ind <- grep("(mean|std)", features$V2)
     var_labels <- grep("(mean|std)", features$V2, value = TRUE)
@@ -69,5 +72,5 @@ run_analysis <- function(path) {
     # name the columns and returns the data containing the average of
     # each variable for each subject and id.
     names(other_data) <- names(all_data)[3:81]
-    other_data
+    write.table(other_data, paste(path,"tidy_dataset.txt", sep =""), row.names = FALSE)
 }
