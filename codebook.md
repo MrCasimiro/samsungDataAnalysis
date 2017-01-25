@@ -1,8 +1,8 @@
 # Data used to generates the data set.
 
 This list shows the variables in the same order
-
-##Column variables
+ 
+## Column variables
 
 __tbodyaccmeanx__
 
@@ -96,9 +96,9 @@ __tbodyaccjerkmeanz__
 
 __tbodyaccjerkstdx__
 
-*tBodyAccJerk-std()-X
-*-0.9849972 .. -0.03388265
-*Domain of time: seconds (sec)
+* tBodyAccJerk-std()-X
+* -0.9849972 .. -0.03388265
+* Domain of time: seconds (sec)
 
 __tbodyaccjerkstdy__
 
@@ -478,7 +478,7 @@ __fbodybodygyrojerkmagmeanfreq__
 * -0.002009238 .. 0.2327925
 * Domain of frequency: hertz (Hz)
 
-##Row variables (in row index)
+## Row variables (in row index)
 
 __1__
 
